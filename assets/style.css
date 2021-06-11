@@ -1,0 +1,141 @@
+/*
+This document contains all the styling for the website
+*/
+
+body{    
+    background-color:honeydew;
+    font-family: Helvetica, "sans-serif";
+    margin:0;  
+    color: darkgreen;  
+}
+
+.about-owner {
+    position: relative; 
+    display: block;
+    margin: auto;
+    clear: both;
+    justify-content: center;
+    border: 2px solid goldenrod; padding: 4px; margin: 2px; width: auto;
+    color:green;
+    background-color: wheat;    
+}
+
+.about-owner img{
+    display: block;
+    margin-bottom: 15%;    
+    float: left;
+    width: 120px;
+    border-radius: 15%;
+    border: 2px solid goldenrod;    
+    justify-content: center;
+}
+
+.about-owner h2{
+    position: relative;      
+    text-align: center;
+    color: green;
+}
+  
+.header{
+    background-color: lightyellow;    
+    border: 5px solid rgb(255, 187, 0);    
+    margin: 0;
+}
+
+.about-company h1{
+    text-align: center;    /*text-position*/
+    padding: 20px;
+}
+
+.about-company h3{
+    text-align: center;    /*text-position*/
+    padding: 20px;
+}
+
+.left{
+    background-color: rgb(238, 217, 190);
+    flex: 20%;
+}
+
+.main{    
+    background-color: honeydew;
+    flex: 60%;    
+    text-align: center;     
+}
+
+.img-banana{
+    display: block;
+    margin: auto;
+    width: 250px;
+    border-radius: 15%;
+    border:2px solid goldenrod;
+  }
+
+.right{
+    background-color: rgb(238, 217, 190);
+    flex: 20%;
+}
+
+/*The three sections; right, left and main, will beon top of eachother in
+    a smaller screen, like a mobile device*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.a-table{
+    background-color: lightyellow;
+    width: auto;
+    text-align:justify;    
+    margin: 0 auto;
+    border: solid goldenrod;
+    
+}
+
+ul li{
+    display: table;
+    margin: 0 auto;
+}
+
+/* Links to the navigation bar for jumping to the different headers */
+.navbar{
+    list-style-type: none;
+    margin: 0;         
+    padding: 0;   
+    top: 20px;   
+    text-align: center;    
+    position: -webkit-sticky; /*Using webkit sticky for functioning in Safari*/
+    position: sticky;
+    
+}
+
+/* Footer  */
+.footer{
+    background-color: cadetblue;    
+}
+
+/* When the screen is less than 700px, the sections left, main and right will be 
+on top of eachother */
+@media screen and (max-width: 700px) {
+    .row{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:700px), (max-height: 500px){
+    .navbar{
+        position: -webkit-sticky;  /*Using webkit sticky for functioning in Safari*/        
+        position: sticky;
+        top: 0;                
+    }
+    .row{
+        flex-direction: column;
+    }
+}
+
+.about-banana{
+    margin: 0 auto;         
+    width: 60%;             
+    text-align: center;    
+    padding: 30px;      
+}
