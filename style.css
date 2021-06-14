@@ -1,5 +1,5 @@
 /*
-This document contains all the styling for the website
+    This document contains all the styling for the website
 */
 
 body{    
@@ -17,7 +17,7 @@ body{
     justify-content: center;
     border: 2px solid goldenrod; padding: 4px; margin: 2px; width: auto;
     color:green;
-    background-color: wheat;    
+    background-color: lightyellow;    
 }
 
 .about-owner img{
@@ -43,12 +43,12 @@ body{
 }
 
 .about-company h1{
-    text-align: center;    /*text-position*/
+    text-align: center;    
     padding: 20px;
 }
 
 .about-company h3{
-    text-align: center;    /*text-position*/
+    text-align: center;    
     padding: 20px;
 }
 
@@ -76,7 +76,7 @@ body{
     flex: 20%;
 }
 
-/*The three sections; right, left and main, will beon top of eachother in
+/*The three sections; right, left and main, will be on top of eachother in
     a smaller screen, like a mobile device*/
 .row{
     display: flex;

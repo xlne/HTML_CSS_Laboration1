@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
     if ($(window).width() <= 700) {
         var stickyHeaderTop = $('#stickyHeader').offset().top;
 
